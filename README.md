@@ -53,7 +53,7 @@
 ---
 
 ## Структура проекта
-```plaintext
+
 fraud_detection_project/
 │
 ├── .gitignore                      # Исключает ненужные файлы (например, venv)
