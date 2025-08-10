@@ -1,26 +1,25 @@
 # Детектор мошеннических транзакций (Credit Card Fraud Detection)
 
-[![Запустить в Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://frauddetectionproject-7npndkuzcmqedslf7m7bvt.streamlit.app/)
+[![Запустить в Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://frauddetectionproject-6tsurxhtdmdrkk2vw725xw.streamlit.app/)
 
 Проект по выявлению мошеннических операций с кредитными картами. Содержит полный цикл работы: от анализа данных и обучения модели до создания веб-приложения на Streamlit для проверки транзакций.
 
 ---
 
-### Демонстрация работы приложения
+## Демонстрация работы приложения
 *(пример GIF-файла)*  
-
-![Демонстрация работы приложения](demo.gif)
+![Демонстрация работы приложения](demo/demo.gif)
 
 ---
 
-### Цели проекта
+## Цели проекта
 - Построить модель, которая определяет мошеннические транзакции.
 - Учесть сильный дисбаланс классов в данных.
 - Создать приложение для тестирования модели с вводом данных вручную или через CSV.
 
 ---
 
-### Технологии
+## Технологии
 
 | Задача | Инструменты |
 |--------|-------------|
@@ -31,7 +30,7 @@
 
 ---
 
-### Этапы работы
+## Этапы работы
 1. **Исследование данных** — проверка распределения классов (492 мошеннических транзакции из ~285 тыс.).
 2. **Подготовка данных**:
    - Масштабирование признаков `Time` и `Amount`.
@@ -45,7 +44,7 @@
 
 ---
 
-### Результаты финальной модели (XGBoost)
+## Результаты финальной модели (XGBoost)
 | Метрика     | Значение |
 |-------------|----------|
 | Accuracy    | 0.99     |
@@ -59,15 +58,25 @@
 ```
 fraud_detection_project/
 │
-├── .gitignore                      # Исключает ненужные файлы (например, venv)
-├── app.py                          # Streamlit-приложение
-├── fraud_detection_project.ipynb   # Ноутбук с анализом и обучением
-├── fraud_detection_xgb.pkl         # Сохранённая модель
-├── requirements.txt                # Список зависимостей для установки
-├── run_app_fraud_det.bat           # bat-файл для быстрого запуска на Windows
-├── test_transactions.csv           # Пример данных для тестирования
-├── demo.gif                        # Демонстрация работы приложения
-└── README.md                       # Этот файл
+├── data/                            # Данные для примеров
+│ └── test_transactions.csv
+│
+├── notebooks/                       # Jupyter ноутбуки
+│ └── fraud_detection_project.ipynb
+│
+├── models/                          # Сохранённые модели
+│ └── fraud_detection_xgb.pkl
+│
+├── app/                             # Приложение Streamlit
+│ └── app.py
+│
+├── demo/                            # Демонстрация работы приложения
+│ └── demo.gif
+│
+├── run_app_fraud_det.bat            # Быстрый запуск приложения
+├── requirements.txt                   
+├── .gitignore
+└── README.md
 ```
 
 ---
@@ -90,4 +99,4 @@ cd fraud_detection_project
 ```pip install -r requirements.txt```
 
 #### 4. Запустить приложение
-```streamlit run app.py```
+```streamlit run app/app.py```
