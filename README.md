@@ -1,6 +1,6 @@
 # Детектор мошеннических транзакций (Credit Card Fraud Detection)
 
-[![Запустить приложение в Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://frauddetectionproject-7npndkuzcmqedslf7m7bvt.streamlit.app/)
+[![Запустить в Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://frauddetectionproject-7npndkuzcmqedslf7m7bvt.streamlit.app/)
 
 Проект по выявлению мошеннических операций с кредитными картами. Содержит полный цикл работы: от анализа данных и обучения модели до создания веб-приложения на Streamlit для проверки транзакций.
 
